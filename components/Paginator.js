@@ -5,7 +5,7 @@ import PageDots from './PageDots';
 import { SymbolButton, TextButton } from './Buttons';
 
 const getDefaultStyle = (isLight) => ({
-  color: isLight ? 'rgba(0, 0, 0, 0.8)' : '#fff',
+  color: isLight ? 'rgb(255,255,255)' : 'rgba(255,255,255,0.5)',
 });
 
 const SkipButton = ({ isLight, ...props }) => (
@@ -46,14 +46,14 @@ const Paginator = ({ isLight, overlay, showSkip, showNext, showDone, pages, curr
 
 const styles = {
   container: {
-    height: 60,
+    height: 50,
     paddingHorizontal: 0,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   containerOverlay: {
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    backgroundColor: 'rgb(31,50,64)',
   },
   buttonLeft: {
     width: 70,

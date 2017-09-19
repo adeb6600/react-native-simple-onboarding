@@ -16,5 +16,12 @@ const TextButton = ({ isLight, size, onPress, textStyle, children }) => (
     </TouchableOpacity>
   </View>
 );
+const ActionButton = ({ isLight, size, onPress, textStyle, children }) => (
+  <View style={{ flex: 0 }}>
+    <TouchableOpacity style={{ flex: 0 }} onPress={onActionPress}>
+      <Text style={{ fontSize: size / 2.5, ...textStyle }}>{children}</Text>
+    </TouchableOpacity>
+  </View>
+);
 
-export { SymbolButton, TextButton };
+export { SymbolButton, TextButton, ActionButton };
